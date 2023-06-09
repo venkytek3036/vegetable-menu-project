@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+header h1 {
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 4rem;
+
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #1c1917;
+}
+
+h2 {
+  color: #1c1917;
+
+  font-size: 1.4rem;
+
+  text-transform: uppercase;
+
+  border-top: 0.3rem solid black;
+
+  border-bottom: 0.3rem solid black;
+
+  margin-bottom: 1rem;
+
+  padding: 1rem 0 1rem 0;
+}
+
+body {
+  background: #374151;
+}
+
+.container {
+  width: 100%;
+
+  max-width: 90rem;
+
+  margin: 2rem auto;
+
+  display: flex;
+
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+
+  background: #f9fafb;
+
+  padding: 2rem;
+}
+
+.base-box,
+.vegetable-box,
+.meat-box,
+.sauces-box {
+  background: #f43f5e;
+
+  width: 20rem;
+
+  height: auto;
+
+  padding: 1rem;
+
+  color: #ffffff;
+
+  font-weight: bold;
+
+  margin-bottom: 2rem;
+}
+
+.cost-container {
+  display: flex;
+
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.cost-container p {
+  background: #eff6ff;
+
+  padding: 0.2rem;
+
+  color: #f43f5e;
+
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-flow: column;
+
+    align-items: center;
+  }
+}
